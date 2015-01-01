@@ -623,10 +623,10 @@ p {
     text-align:center;
 }
 .price-column h3 {
-    background-color:#181A1C;
+    background-color:#FECE1A;
     text-transform:uppercase;
     text-align: center;
-    color:#FECE1A;
+    color:#181A1C;
     padding:40px 0px;
     font-size: 36px;
     margin-top:0px;
@@ -637,14 +637,23 @@ p {
 .price-column .list{
     list-style:none;
     margin:20px 50px;
+    margin: 0;
+    text-align: center;
 }
 .price-column .list li{
     font-weight:lighter;
-    color:#747C89;
+    color:#181A1C;
     font-size:20px;
     border-bottom:1px solid #747C89;
-    padding:25px 0px;
+    padding:20px;
+    line-height: 25px;
 }
+
+.price-column .list li:last-child{
+    border: none;
+  
+    }
+
 .price-column .list li.price {
     text-align: center;
     font-size:31px;

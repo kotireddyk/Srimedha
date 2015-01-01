@@ -356,43 +356,53 @@
             </div>
         </div>
         <!-- Price section start -->
-        <div id="price" class="section secondary-section">
+        <div id="price" class="section primary-section">
             <div class="container">
                 <div class="title">
                     <h1>Price</h1>
                     <p>Reasonable price for sale and cheapest price for service.</p>
                 </div>
                 <div class="price-table row-fluid">
-                    <div class="span4 price-column">
-                        <h3>Basic</h3>
+                    <div class="span3 price-column">
+                        <h3>EPSON</h3>
                         <ul class="list">
-                            <li class="price">$19,99</li>
-                            <li><strong>Free</strong> Setup</li>
-                            <li><strong>24/7</strong> Support</li>
-                            <li><strong>5 GB</strong> File Storage</li>
+                            <li><strong>EPSON L210 - 9,700rs</strong></li>
+                            <li><strong>EPSON 245 - 12,300rs</strong></li>
+                            <li><strong>EPSON M200 - 12000rs</strong></li>
+                            <li><strong><a href="#contact" class="button button-ps">Contact</a></strong>
                         </ul>
-                        <a href="#" class="button button-ps">BUY</a>
                     </div>
-                    <div class="span4 price-column">
-                        <h3>Pro</h3>
+                    <div class="span3 price-column">
+                        <h3>SAMSUNG</h3>
                         <ul class="list">
-                            <li class="price">$39,99</li>
-                            <li><strong>Free</strong> Setup</li>
-                            <li><strong>24/7</strong> Support</li>
-                            <li><strong>25 GB</strong> File Storage</li>
+                            <li><strong>SAMSUNG XPRESS M2876nd - 13,500rs</strong></li>
+                            <li><strong>SAMSUNG 4321ns - 12500rs</strong></li>
+                            <li><strong><a href="#contact" class="button button-ps">Contact</a></strong>
                         </ul>
-                        <a href="#" class="button button-ps">BUY</a>
                     </div>
-                    <div class="span4 price-column">
-                        <h3>Premium</h3>
+                    <div class="span3 price-column">
+                        <h3>RICOH</h3>
                         <ul class="list">
-                            <li class="price">$79,99</li>
-                            <li><strong>Free</strong> Setup</li>
-                            <li><strong>24/7</strong> Support</li>
-                            <li><strong>50 GB</strong> File Storage</li>
+                            <li><strong>RICOH 202 - 11,000rs</strong></li>
+                            <li><strong>RICOH 200S - 8,000rs</strong></li>
+                            <li><strong><a href="#contact" class="button button-ps">Contact</a></strong>
                         </ul>
-                        <a href="#" class="button button-ps">BUY</a>
                     </div>
+                    <div class="span3 price-column">
+                        <h3>BROTHER</h3>
+                        <ul class="list">
+                            <li><strong>Brother J100 - 8,600rs</strong></li>
+                            <li><strong>Brother 3520 A3 Xerox - 26000rs</strong></li>
+                            <li><strong><a href="#contact" class="button button-ps">Contact</a></strong>
+                        </ul>
+                    </div>
+                    <!--div class="span3 price-column">
+                        <h3>CANON</h3>
+                        <ul class="list">
+                            <li><strong>CANON M287 - 5,500rS</strong></li>
+                        </ul>
+                        <a href="#contact" class="button button-ps">Contact</a>
+                    </div-->
                 </div>
             </div>
         </div>
