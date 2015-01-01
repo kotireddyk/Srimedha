@@ -86,7 +86,7 @@
         <div id="home">
             <!-- Start cSlider -->
             <div id="da-slider" class="da-slider">
-                <div class="triangle"></div>
+                <!--div class="triangle"></div-->
                 <!-- mask elemet use for masking background image -->
                 <div class="mask"></div>
                 <!-- All slides centred in container element -->
@@ -178,8 +178,8 @@
         </div>
         <!-- Service section end -->
         <!-- About us section start -->
-        <div class="section primary-section" id="about">
-            <div class="triangle"></div>
+        <div class="section secondary-section" id="about">
+            <!--div class="triangle"></div-->
             <div class="container">
                 <div class="title">
                     <h1>Who We Are?</h1>
@@ -260,18 +260,10 @@
             </div>
         </div>
         <!-- About us section end -->
-        <div class="section secondary-section">
-            <div class="triangle"></div>
-            <div class="container centered">
-                <p class="large-text">Elegance is not the abundance of simplicity. It is the absence of complexity.</p>
-                <a href="#" class="button">Purshase now</a>
-            </div>
-        </div>
-        <!-- Client section start -->
         <!-- Client section start -->
         <div id="clients">
             <div class="section primary-section">
-                <div class="triangle"></div>
+                <!--div class="triangle"></div-->
                 <div class="container">
                     <div class="title">
                         <h1>What Client Say?</h1>
