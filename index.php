@@ -394,10 +394,6 @@
                         <a href="#" class="button button-ps">BUY</a>
                     </div>
                 </div>
-                <div class="centered">
-                    <p class="price-text">We Offer Custom Plans. Contact Us For More Info.</p>
-                    <a href="#contact" class="button">Contact Us</a>
-                </div>
             </div>
         </div>
         <!-- Price section end -->
