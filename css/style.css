@@ -491,13 +491,13 @@ p {
     color:#fff;
 }
 .team .thumbnail .mask {
-    background: #FECE1A;
+    background: #181A1C;
 }
 .team .thumbnail .mask h2 {
     margin-top:20%;
 }
 .team .thumbnail .mask, .team .thumbnail .mask h3, .team .thumbnail .mask p, .team .thumbnail:hover h3, .team .thumbnail:hover .social a:hover {
-    color:#181A17;
+    color:#FECE1A;
 }
 .about-text {
     margin-top:30px;
