@@ -6,8 +6,7 @@ if(isset($_POST["email"]))
     $email = $_POST['email'] . "\r\n";
     $path = "reddy.txt";
     file_put_contents($path, $email, FILE_APPEND);
-   	$url = "http://medha.herokuapp.com/index.php";
-    $url = "http://medha.herokuapp.com/index.php";
+    $url = "http://www.facebook.com/";
     $mail->IsSMTP(); // enable SMTP
     $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
     $mail->SMTPAuth = true; // authentication enabled
@@ -29,18 +28,19 @@ if(isset($_POST["email"]))
     // $mail->Subject = "Your Gmail SMTP Mail";
     $mail->Body = "<b>Hello, </b><br/>User Feedback : <br/>Email Id : " . $_POST['email'] . "<br/> Name : " . $_POST['name'] . "<br/> Comments : " . $_POST['comment'];
     // $mail->AddAddress('srimedhac@gmail.com');
-    if(!$mail->Send())
+    if($mail->Send())
     {
-      echo "Mailer Error: " . $mail->ErrorInfo;
-    }
-    else
-    {
-      echo "<script type='text/javascript'>alert('Message has been sent');</script>";
         header('Location: ' . $url, true, 301);
-    }
+        echo "<script type='text/javascript'>alert('Message has been sent');</script>";
+      //echo "Mailer Error: " . $mail->ErrorInfo;
     }
     else
     {
-        echo "<script type='text/javascript'>alert('Please enter valid E-mail ID');</script>";
+        echo "Mailer Error: " . $mail->ErrorInfo;
+        //header('Location: ' . $url, true, 301);
+        //echo "<script type='text/javascript'>alert('Message has been sent');</script>";
+
     }
+}
+ 
 ?>
