@@ -240,15 +240,11 @@ Sand mail
 
                 },
                 success: function (response) {
-                    response = $.parseJSON(response);
-                    if (response.success) {
+                    //response = $.parseJSON(response);
                         $('#successSend').show();
                         $("#name").val('');
                         $("#email").val('');
-                        $("#comment").val('');
-                    } else {
-                        $('#errorSend').show();
-                    }
+                        $("#comment").val('');                   
                 }
             });
             return false;

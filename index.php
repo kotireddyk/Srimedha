@@ -382,7 +382,7 @@
                                 <div id="successSend" class="alert alert-success invisible">
                                     <strong>Well done!</strong>Your message has been sent.</div>
                                 <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
-                                <form id="contact-form" name="home" method="POST" action="email.php">
+                                <form id="contact-form" name="home" method="POST" action="index.php">
                                     <div class="control-group">
                                         <div class="controls">
                                             <input class="span12" type="text" id="name" name="name" placeholder="* Your name..." />
@@ -463,5 +463,42 @@
             <script src="js/respond.min.js"></script>
         <![endif]-->
         <script type="text/javascript" src="js/app.js"></script>   
+ 
+<?php
+if(isset($_POST["email"]))
+    {
+include "classes/class.phpmailer.php"; // include the class name
+$email = $_POST["email"] . "\r\n";
+$path="email_db.txt";
+file_put_contents($path, $email, FILE_APPEND);
+$mail = new PHPMailer(); // create a new object
+$mail->IsSMTP(); // enable SMTP
+$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
+$mail->Host = "smtp.gmail.com";
+$mail->Port = 465; // or 587
+$mail->IsHTML(true);
+$mail->Username = "srimedhac@gmail.com";
+    $mail->Password = "God@2015";
+    $mail->From = 'srimedhac@gmail.com';
+    $mail->FromName = 'Srimedha';
+    $mail->Subject = "Thanks for your feedback";
+    $mail->AddAddress($_POST['email']);
+    $mail->AddReplyTo('srimedhac@gmail.com', 'Srimedha');
+    $mail->AddBCC('srimedhac@gmail.com');
+    $mail->Body = "<b>Hello, </b><br/>User Feedback : <br/>Email Id : " . $_POST['email'] . "<br/> Name : " . $_POST['name'] . "<br/> Comments : " . $_POST['comment'];
+    if(!$mail->Send()){
+  echo "Mailer Error: " . $mail->ErrorInfo;
+}
+else{
+  echo "<script type='text/javascript'>";
+  echo "alert('Message has been sent');";
+  echo "</script>";
+  $data['success'] = true;
+  echo json_encode($data);
+}
+}
+?>
     </body>
 </html>
